@@ -41,7 +41,7 @@ CACHE_FILE="${CACHE_DIR%/}/data"
 # ---------------------
 #
 usage() {
-    echo "Usage: ${APP_NAME%.*} [Options]"
+    echo "Usage: ${APP_NAME} [Options]"
     echo ""
     echo "Options:"
     echo "  -a ARG(str)   Query argument (repeatable, may be prefixed with 'p=')."
@@ -51,10 +51,10 @@ usage() {
     echo "  -v            Show the script version."
     echo ""
     echo "Examples:"
-    echo "  ${APP_NAME%.*} -s service -a uptime"
-    echo "  ${APP_NAME%.*} -s vrrp -j NAME -a list"
-    echo "  ${APP_NAME%.*} -s vrrp -a data -a VI_1 -a State"
-    echo "  ${APP_NAME%.*} -s vrrp -a stats -a VI_1 -a 'Became master'"
+    echo "  ${APP_NAME} -s service -a uptime"
+    echo "  ${APP_NAME} -s vrrp -j NAME -a list"
+    echo "  ${APP_NAME} -s vrrp -a data -a VI_1 -a State"
+    echo "  ${APP_NAME} -s vrrp -a stats -a VI_1 -a 'Became master'"
     exit 1
 }
 
